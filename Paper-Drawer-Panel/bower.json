@@ -1,0 +1,18 @@
+{
+  "name": "Paper-Drawer-Panel",
+  "version": "0.0.0",
+  "authors": [
+    "TadhgH <achocalypse@live.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-elements": "PolymerElements/paper-elements#~1.0.4"
+  }
+}

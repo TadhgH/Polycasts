@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="import" href="elements.html">
+  <link rel="import" href="theme.html">
+</head>
+<body class="unresolved">
+
+<template is="dom-bind" id="app">
+
+  <paper-drawer-panel id="drawerPanel">
+
+    <paper-header-panel drawer>
+      <paper-toolbar>Menu</paper-toolbar>
+      <paper-menu selected="{{page}}" attr-for-selected="data-category">
+        <paper-item data-category="home" label="One">Home</paper-item>
+        <paper-item data-category="portfolio" label="Two">Portfolio</paper-item>
+        <paper-item data-category="contact" label="Third">Contact</paper-item>
+      </paper-menu>
+    </paper-header-panel>
+
+    <paper-header-panel main>
+      <paper-toolbar>
+        <paper-icon-button paper-drawer-toggle icon="menu"></paper-icon-button>
+        <div flex class="title">MyApp</div>
+      </paper-toolbar>
+      <div class="content fit layout vertical">
+        <iron-pages selected="{{page}}" attr-for-selected="data-category">
+          <section data-category="home">
+            <h1>Home</h1>
+            <div>Home Content</div>
+          </section>
+          <section data-category="portfolio">
+            <h1>Portfolio</h1>
+            <div>Portfolio Content</div>
+          </section>
+          <section data-category="contact">
+            <h1>Contact</h1>
+            <div>Contact Content</div>
+          </section>
+        </iron-pages>
+      </div>
+    </paper-header-panel>
+
+  </paper-drawer-panel>
+
+</template>
+
+  <br><br><br><br>
+
+
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

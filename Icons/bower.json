@@ -1,0 +1,21 @@
+{
+  "name": "icons",
+  "version": "0.0.0",
+  "authors": [
+    "TadhgH <achocalypse@live.com>"
+  ],
+  "description": "polymer icons",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.0.7",
+    "iron-elements": "polymerelements/iron-elements#~1.0.3"
+  }
+}

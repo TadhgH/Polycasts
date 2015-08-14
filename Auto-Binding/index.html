@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="import" href="elements.html">
+  <link rel="import" href="theme.html">
+</head>
+<body class="fullbleed layout vertical">
+
+<template is="dom-bind" id="tmpl">
+  <!--must set height for panel and parent-->
+  <paper-drawer-panel id="drawerPanel">
+
+    <paper-header-panel drawer>
+      <paper-toolbar>Menu</paper-toolbar>
+      <paper-menu selected="{{selected}}">
+        <paper-item label="One">One</paper-item>
+        <paper-item label="Two">Two</paper-item>
+        <paper-item label="Third">Third</paper-item>
+      </paper-menu>
+    </paper-header-panel>
+
+    <paper-header-panel main>
+      <paper-toolbar>
+        <paper-icon-button paper-drawer-toggle icon="menu"></paper-icon-button>
+        <div flex class="title">{{heading}}</div>
+      </paper-toolbar>
+      <div class="content">
+        You're on page: <span>{{selected}}</span>
+      </div>
+    </paper-header-panel>
+  </paper-drawer-panel>
+</template>
+
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
